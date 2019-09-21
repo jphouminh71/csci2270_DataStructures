@@ -1,0 +1,6 @@
+basement 0
+Administration 1
+WeightRoom 2
+FieldTrainingFacility 3
+NutritionCenter 4
+Pool 5
