@@ -1,0 +1,44 @@
+Graph Notes
+
+
+Graphs are powerful and versatile data structure that easily allow us to represent real life relationships between different types of data (nodes). There are two main parts of a graph:
+The Vertices (nodes)
+  - where the data stored (nodes)
+The Edges (connections)
+  - which connect the nodes ex, the lines between each nodes. (the arrows) a --> b the fucking arrow is the edge
+
+Directed vs undirected
+  - just think about that two way streets work
+    directed graphs are one way
+    un-directed are two way streets
+
+DEPTH FIRST SEARCH
+  Recursive algorithm , keep asking the children if they can find the specified node
+  - have to make sure you are not caught in a cycle
+  - keep checking the child / adjacent nodes
+    - traversing through one branch at a time
+    - exploring one alley, then come back, then explore the next alley
+BREADTH FIRST SEARCH
+  explore the adjecent nodes first
+  Ask wide not DEPTH
+  have to implement with a queue
+
+WEIGHTS
+  - the values associated with the edges, the cost of traversing that edge
+
+Operations we can use on Graphs
+
+Additions:
+  addNode: adds vertices to our graph
+  addEdge: creates edges between two given vertices in our graph
+Removals:
+  removeNode: removes vertices from our graph
+  removeEdge: removes edges between two given vertices in our graph
+Search:
+  contains: checks to see if our graph has the value
+  hasEdge: checks the graph to see if there is an edge between two nodes
+
+In addition to this , graphs can be weighted or unweighted. When the edges have a cost associated with it. it is weighted. otherwise the graph is unweighted. The best example
+of a weighted graph would be a Google maps and the time / distance with traveling from one place to another.
+
+Graphs can represent different types of relatioships between various forms of data. 

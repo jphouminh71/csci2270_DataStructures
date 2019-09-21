@@ -1,0 +1,31 @@
+Recursion:
+  - The idea is that we keep doing big problems, with small versions of the big problem to solve the big problem
+  - Method that calls itself
+
+Algorithm
+  IF the problem can be solved directly for the current value of n
+  Solve it
+  ELSE
+    recursively apply the algorithm to one or more problems involving smaller values of n,
+    combine the solutions of smaller problems to get the solution to the original problems
+
+    ** the main point is to make sure that the base case will end the recusion
+
+
+
+Binary Search
+  - Whatever is being Search
+    has to have a size
+    has to be sorted
+  - you can access any element at will
+
+algorithm
+  IF the list is empty
+    return -1;
+  else if, the middle element matches the target
+    return the index of the middle element as the result
+  else if , the target is less than the middle element
+    recursievly search the list elements preceding
+      the middle element then return the result
+  else,
+    recursively search the vector elements following the middle element and return the result

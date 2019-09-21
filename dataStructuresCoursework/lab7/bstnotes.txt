@@ -1,0 +1,13 @@
+Binary Search Tree search
+- Can be a null nodes- Can have a single node, the root
+- Right child of the root is greater than the left child of the root
+- parents of binary search tree are sub-binary search tree
+
+pre order traversal , pre stands for the root
+  root -> left -> Right
+post order traversal
+  left -> right -> root
+in order traversal is , root is between left and right
+  Left -> root > Right
+
+Putting together a tree:

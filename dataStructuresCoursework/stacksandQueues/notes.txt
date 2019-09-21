@@ -1,0 +1,55 @@
+Stacks
+"First in Last out"
+"Last in first out"
+
+Overflow : stack is full and trying to push in another value
+** push operation can potentially cause this
+Underflow : popping out a value on the stack
+** pop operation can potentially cause THIS
+** peak can also be the cause of underflow because if you try to peak at an empty list you'll see nothing
+
+
+stack operations:
+isEmpty
+isFull
+pop
+push
+peek  == operation to find see what is at the top of the stack
+
+
+What woudl the stack look like after THIS
+stack<int> mystack;
+mystack.push(1);
+mystack.push(2);
+mystack.push(3);
+mystack.pop( );
+mystack.pop( );
+mystack.push(4);
+look on phone of picture on this <-- array version
+
+LL version
+look on phone
+
+
+Big O notation of a stack;
+array
+O(1); if the array is empty   // push and pop
+O(1); if we are pushing, we just into the last index; // push and pop
+
+linked list;
+adding to the beginning of the linked list, bigO(1);    // push and pop because you are always working from the top or the bottom
+
+Queues
+examples of queues: lines at bank, store, DMV
+- batch jobs
+- Scheduling
+
+Operations of Queues:
+isEmpty
+isFull (array)
+enqueue
+dequeue , removing the next item from the top of the stack
+peek
+
+
+Priority queues

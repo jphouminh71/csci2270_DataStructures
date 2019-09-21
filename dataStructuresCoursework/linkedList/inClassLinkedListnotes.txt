@@ -1,0 +1,10 @@
+                                                            Linked Lists
+Start every linked list with a HEAD.
+- Every linked list node contains some data and then a pointer variable that points to another node that has another piece of data along with either
+another address pointing to another node, or an address that is set to NULL.
+
+Example of struct declaration:
+struct Data{
+  char letter;
+  Data *next;     <-- pointer that points to another object of type data
+};

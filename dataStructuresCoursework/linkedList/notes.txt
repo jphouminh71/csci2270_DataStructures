@@ -1,0 +1,77 @@
+LINKED LISTS
+  think of a train
+    the engine of the train is the start pointers
+    the carts are the nodes, the things that store the actual data
+    the connection between each cart is , the pointers in node, which point to the next node
+
+  Why we are using struct..?
+  Our objective is to make createNodeSuppose we are making linked list to store integer values
+
+  suppose you want to store int value in a pointer
+    int data;   <-
+    int* ptr;   <-
+    ptr = &data     // the data type and pointer need to be the sam
+
+    the pointer is pointing to the nodes, since a pointer is pointing to a struct who name is node, the pointer type has to be the same, struct *nodes
+
+    node *start = NULL;
+      this is a global pointer ,  which will points to the start of the list.
+      since there is no list yet it will be set to NULL to save memory.
+      The return type of this function is node8, means it will return a pointer which is pointing to a node.
+
+    in the function,
+      node* createNode()
+      {
+        node *temp;
+        temp = new node;
+        return temp;
+      }
+        this function will only allocate memory, if i have to this function , make a pointer node *ptr = createNode()
+
+
+In class notes;
+  Dynamic memory recap;
+    int *arr = new int[10]    // this serves the same as a array, BUT its just pointing to memory that has been allocated , specifically sending the address of the first element. It is now working as if you passed the array as reference.
+
+  ARRAY DOUBLING SYNTAX !!!!!!
+
+  int *arr = new int[10];
+  passByArr(arr, oldSize);  , when you call this first it will create a new array, and then have DOUBLE the memory namespace
+    int *newArray = new int[20]
+    // copy from old to new
+    // make changes to old oldSize
+    delete[] arr;
+    arr = newArr;             // following these steps you will have doubled the array
+
+
+In Class Notes;
+  whenever learning data structures ask.
+  1. Why am i learning this?
+  2. is there better alternatives / how and what.
+    - creation
+    - insertion
+    - deletion
+    - sorting?
+    - searching
+Linked List
+  - very efficient memory wise.
+  - doesn't waste memory
+basic structure
+  you must have a head of the linked list, the first pointer that points to the other POINTERS
+  then you have a tail on the linked list.
+  when searching through linked list, when you find the element you want, it will send back the address of that element.
+
+Insertion:
+
+Deletion:
+
+Searching:
+
+
+side notes:
+Can you traverse through a link list the way you traverse through the array?
+  no because the memory spaces are not contiguous unlike arrays, and the memory spaces next to eachother are dependant on what you set it too.
+
+
+ALWAYS HAVE A COPY FOR THE VALUE OF THE HEAD OF THE LINKED LIST
+  in case you fuck up and lose what position you are at you have a backup reference to the beginning.

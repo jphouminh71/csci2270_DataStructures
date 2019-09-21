@@ -1,0 +1,60 @@
+Priority Queue
+Difference is that priority queue elements have queue value and also a key value to tell which element has priorty
+(x,key);
+- Just like with a queue, you have the functions push and pop, insert and remove, and also peekMin(s), extractMin(s),
+- the way you always implement a queue is with a heap
+
+
+HEAP:
+  - heaps are stored in memory through arrays.
+  - its an array that is treated like a tree.
+
+to find the parent of a node -> i/2
+to find the left child of a node-> 2i
+to find the right child of a node -> 2i + 1
+
+to go upwards in a heap just divide the index by 2. (integer division makes this easier)
+
+Min heap properties
+- for every key in the heap , the key is greater than or equal to the keys of its children
+
+
+
+
+HEAPS
+- a heap is a semi-ordered tree-based data structure where either:
+  - Each parent's key is greater than its children ( this is a max heap, where the largest element is on the top)
+  - Or each parent's key is less than its children ( this is a min heap, smallest elements on the top)
+
+Often these trees will have a max number of children (per parent) of 2, in which case they are known as BINARY heaps.
+Top to bottom ordering can only be guarenteed with elements who are actually children, grandchildren, and so on - there is no general guarantee of order between levels.
+
+Remember that heaps are SEMI ordered.
+left or right order isn't guaranteed or level order
+
+Operations on heaps.
+  Insertion, we always insert a new element into the highest, and then left-most, position that is available. (This will allow us to efficiently use an array to represent the elements)
+    Newly inserted elements run the risk of causing an unbalance in the heap so after we add the new element we need to heapify the heap to make sure that it is still a min or max heap.
+
+  Removal, take the element out of the tree and then replace it with the lowest and right most element in the tree. Often we remove the root of the tree in a PQ
+    note that the top now violates the properites of a min / max heap so we have to heapify but go downwards.
+
+
+We'll use an array as our backing data structure. Because of the way we chose to add and remove elements from the heap, mapping them to indecies in an array is a snap.
+The first element tells us where the root is ( index 1 ). and the where to insert a new element after ( or which element would swap into a hole). Note that we will never have internal holes in
+the array.
+
+
+
+Now that we know what a Heap is we will now integrate this structure to help create a priority queue
+  Making a priority queue from a heap is straightforward:
+    Use a heap data structure underneath
+    insert new elements into the heap
+    remove the top element to get the highest priority element
+    change priorities by removing the element and then re-inserting it
+
+    same function hold true for the normal queue
+
+  Implementation Caveats:
+    Array may need resizing as the heap grows; doubling the array is usually a good idea ( or vectors ?)
+    Sometimes heaps are more than two children per parent may be more efficient for some applications.

@@ -1,0 +1,23 @@
+Recursive Functions
+
+Theory:
+  A function that calls itself is known as a recursive function. And, this technique is known as , recursion.
+  Recursion is the process of repeating items in a self similar way
+
+  This enables the function to repeat itself several times, outputting the result and the end of each iteration.
+
+  The recursion continues until some condition is met to prevent it.
+
+  To prevent infinite recursion, if / else statements (or similar approach), can be used where one branch makes the recursive call and other
+  doesn't. so like , if this, return that, or else, do it again.
+
+  Advantages / Disadvantages of Recursive Functions
+
+   Recursion makes program elegant and cleaner, most of the algorithms can be defined recursively which makes it easier to visual and prove.
+
+   If speed of program is vital then, you should AVOID using recursion. Recursion use more memory and are generally slow. Instead just use loops.
+
+   For the most part recursion is slower , and takes up more of the stack as well. The main advantage to recursion is that for problems like tree traversal,
+   it makes the algorithm a litter easer or more 'elegant'.
+
+  Self Notes: Its very similar to the process of integration by parts.

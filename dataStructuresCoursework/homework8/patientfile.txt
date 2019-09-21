@@ -1,0 +1,9 @@
+Greg 10 80
+Jeff 5 40
+Henry 1 10
+Jon 4 35
+Jak 7 300
+Jacob 9 100
+Diana 3 25
+Isabelle 6 60
+Jewels 8 100

@@ -1,0 +1,16 @@
+class with attributes
+- string title
+- int year
+- double ratings
+
+- create all accessors and mutator functions (getter / setter)
+- create a default constructor that sets default constructs with
+  - title: unknown
+  - year: 2016
+  - rating: 0.0
+- Overloaded constructor should contain
+  - custom title
+  - custom year
+  - custom rating
+Objective
+  - create a driver file that creates 3 different movies and test them all

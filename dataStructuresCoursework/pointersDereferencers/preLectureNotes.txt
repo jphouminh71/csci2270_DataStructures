@@ -1,0 +1,45 @@
+PreLecture Video Notes:
+  REFERENCES:
+  Memory Address:
+  - where variable stored in Memory
+  random hexidecimal value
+  each address is unique but sequencial
+
+& , is the ADDRESS of operator
+  - used to get an address from variables
+  - also can create a reference variable.
+
+  Reference Variable:
+  - a variable that has the exact same memory address and data of the variable.
+  - it is not a copy
+  - place, & , between data type and variable
+  - put the & next to data type
+
+  Dereference operator
+  - *(star) << this is the Dereference operator
+  - think of it as , "get the value at"
+  - also used to create pointers
+
+  int a = 5;
+  cout << *&*&a << endl;
+
+
+Pointers:
+  - variables with its own block of Memory
+  - holds ONLY an address to another block of Memory
+  - it 'hooks' into other 'hoops'
+  - its its own variable with its own address but whats within the variable is an address of another value.
+  - multiple pointers can point to the same ADDRESS
+  - a pointer can point to one address or none at all, auto set to NULL. do not need to be set when initially
+  - can you set pointers equal to eachother?
+    - yes, they would just be pointing to the same address.
+  - pointers and elements MUST be the same data type, because different data types have different fixed memories.
+
+Array of pointers:
+-
+
+Command line arguments Notes
+- when you entering command line arguments, every input is seperated by a space mark;
+- you can pass 1 argument that has a space with , "" .
+
+Dynamic Memory Notes;

@@ -1,0 +1,6 @@
+The process of parsing dating through means of breaking up list into 2 until value is found.
+conditions
+  1. We need the list to already be sorted
+
+Basic algorithm
+  specify beg, mid, and end for the list positions. mid is found by end - beg / 2

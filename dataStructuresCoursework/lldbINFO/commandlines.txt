@@ -1,0 +1,14 @@
+first compile
+g++ -g <filename>
+
+then compile the a.out
+lldb a.out
+
+then set whatever breakpoint
+b main
+
+functions
+
+s = step
+n = next
+exit

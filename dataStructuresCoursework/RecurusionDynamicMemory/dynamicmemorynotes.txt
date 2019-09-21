@@ -1,0 +1,123 @@
+Big O notation
+
+  big o tells us a lot about our program and how we can make our program more efficient
+  - tells us the amount of memory our program uses
+  - lets us visualize how much processing memory and speed of which we are proccessing takes
+  - we care about the amount of time it takes and memory allocation
+
+  Time Complexity
+    void printJimmmy(int array[])
+    {
+      cout << array[0]
+    }
+    in this example we get the complexity to be O(1)
+
+    void printAllJimmy (int array[])
+    {
+      for (int i = 0; i < n; i++)
+      {
+        cout << n
+      }
+    }
+
+    gives complexity of O(n).
+
+    void print2dArr(int array[])
+    {
+      for (intt....)
+        for int j = 0; j < size; j++
+        {
+          cout << array blah blah blah
+        }
+    }
+
+    this gives O(n^2) VERY BAD
+
+    what about
+
+    void blah blah
+    for{
+      blah
+    }
+    for{
+      blah
+    }
+
+    this gives O(2n) BUT in big O remember to drop constants, doesn't affect runtime
+
+
+  Space complexity
+    - here we care about optimizing for LESS memory
+
+    void jimm(int n)
+    {
+      while (n >= 0)
+      {
+        cout << "HI.";
+        n--
+      }
+    }
+      in this example it would be 0(1) in terms of space complexity because we are only dealing with one variable
+
+      void jimm(int n)
+      {
+        int array[n];
+        while (n >= 0)
+        {
+          cout << "HI.";
+          array[n] = i;
+          n--
+        }
+      }
+
+      here it will be O(n) because we are taking up more space allocation in the array as we keep on incrementing
+
+O(logn)
+  imagine you have phonebook of 10000000 name and you need to find a number
+
+
+IN CLASS NOTES
+
+3 pointers rules,
+
+  you have a pointer that points to a pointer
+  pointer dereferencing start at pointer than goes to pointer
+  you can point multiple pointers at one item
+
+  dynamic memory, want memory and the quad
+  allocating memory on the fly when you need it.
+  when you allocate memory dynamically you have to make sure you delete the old memory to free up memory.
+
+
+Static memory
+  int x; <-- you are grabbing a spot in memory for , x.
+
+Dynamic memory
+  int* ptr;
+
+Operation:
+  new -> allows you to store memory
+  delete  -> frees up memory, memory amount is dependant on machine
+    when you are deleting array that you allocated
+      you have to type
+        delete[] q;
+    delete usually found in the destructor
+
+char* q = new char[s];      // the new is allocating memory dynamically
+
+
+
+Class destructor
+
+class SomeClass
+{
+public:
+  ~someClass();
+
+};
+SomeClass::SomeClass()
+{
+  
+}
+
+more pointer NOTES

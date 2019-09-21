@@ -1,0 +1,40 @@
+Time Complexity
+  Time Complexity, time it takes for the program to execute some part of code.
+
+Linear Time Complexity;
+  Where time is dependent on the size of input, n;
+    ex)
+      void print(int n)
+      {
+        cout << n << endl;
+      }                       << BigO(n), time increases linearly with the size of n
+
+
+      Another example
+
+      given array = size 10;        // this is bigO(1) because the function will execute in the same time everytime.
+      def stupid_function (array);
+      {
+        total - 0;
+        return total
+      }
+
+
+
+
+
+Constant Time Complexity;
+  when runtime isn't affected by the size of input ;
+    BIGo(1);    << Time isn't affected
+
+  Big O is good because it allows us to determine which is the most efficient function.
+Quadratic Time Complexity;
+  when runtime is affected exponentially as the size of input increases
+    BigO(n^2);
+
+Rules to finding BIGo
+1. Find the fastest growing term in the Constant
+2. take out the coefficients
+
+ex)
+  dn^2 + dn + e << this bigO is just bigO(n^2) as we disregard all values of constant and then pull out the fastest growing term.

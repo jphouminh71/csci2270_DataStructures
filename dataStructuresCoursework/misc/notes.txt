@@ -1,0 +1,63 @@
+LAB 0:
+
+Office hours;
+  monday 930-12 ECCS 112A
+  tuesday 930-1130, CSEL
+
+Labs due mondays 11:30am
+
+UNIX Commands
+  ls , list all things in the current directory
+  ls -l , gives more details about file
+  cd , changes the directory,
+  mkdri [dir], creates directory
+  pwd , tells you where you are in the directory
+
+  terminal compiler command;
+  g++ -std=c++11 *filename*
+  ./a.out *filename*  <== program ready to compile;
+
+Lecture 1: Basic Algorithms
+Cost - we are concerned about our algorithms taking up memory and runtime(cpu runs)
+BIG_0 Notation: Big-O is an asymptote notation that defines the upper bound on the growth rate of the algorithmic runtime.
+The algorithmic runtime can be characterised as f(n)
+  - the letter O is used because the growth rate of a function is also referred to sa the order of the function.
+
+Growth Rate: Answers the question, "How does the algorithm scale with the input size"
+Ex ) n,n^2,etc.
+  Big O essentially sets an upper bound of (x) complexity;
+
+Ex of 1,n and n^2
+the following code is fragment from an algorithm that ececutes a constant number of statements thus it is O(1);
+code:
+  cout << "Learning Big-O";
+
+if the number of executions depend on a variable, then we have a higher than constant growth rate.
+
+code:
+  for (int i = 0; i < n; i++){
+    cout << "Learning big-0"
+  }
+
+quadratic complexity
+  for (int i = 0; i < n; i++){
+    for (int j = 1; j < n; j++){
+      cout "Learning Big O";
+    }
+  }                       this is a quadratic growth function
+
+  if there is an algorithm with input reduce by 2 everytime then the complexity becomes logbase(2) and at everystep is reduced by 2
+
+Side notes:
+argc = count of arguments given by command line
+argv[] = this is the array that keeps all the count of arguments
+
+by default the count of arguments is 1, and the name of the compiled program is argv[0] = ./a.out
+
+POINTERS:
+Pointers are pointers are what point to the address of some value(variable) and the dereferencer pushes the pointer into whatever the actual value was
+in that specific address.
+- dereferencer pushes the pointer at the content, whatever inside the variable.
+- stars are to
+
+Pass by value and pass by reference 

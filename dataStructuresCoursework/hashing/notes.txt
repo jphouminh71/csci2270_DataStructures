@@ -1,0 +1,51 @@
+Hashing
+- Hash tables are even faster than trees.
+
+In hash tables, we have an array (indexes ranges 0... n-1)
+  each array location is called a bucket
+Hash function ( an address calculator)
+  maps a search key into an array index between 0.... n-1
+  eg, hx = x%n , where x is an integer
+Hashing
+
+Perfect Hash function:
+  - maps each search key into a unique location of the has table
+    - when is this possible?
+
+
+    - in practice we do not know all the search keys, so what can happen using a hash function?
+
+We only use integers for hash functions because its easy to work with.
+
+when does a collision occur?
+  -its when we hash maps more than item to the same array location
+
+What makes a good hash table?
+- place items uniformly (evenly) into hash table , prime numbers help.
+- easy and fast to compute
+How do we design a hash function?
+1. selecting digits
+      1. Select certain deigits and combine to create the address
+        For example, suppose that we have 11 digit Turkish nationality ID's
+        - Define a hash function that selects the 2nd and 5th most signifigant digits
+      2. select certain digits and comnine to create the address
+2. folding
+3. modular arithmetic
+(or a combination of them)
+
+Hash functinos - selecting digits
+
+
+youtube what the hell hashing is.
+
+
+
+THINGS TO CONSIDER WITH HASH TABLES
+1. How big should the table be
+  - big enough where you dont get a lot of collisions
+  - small enough not to waste memory
+2. How to avoid collisions , different hash functions
+3. Dealing with collisions                                LOOK UP: Open hashing vs open addressing , linear probing, quadratic probing 
+  - open addressing == close hashing
+  - opening hashing
+    - this is when

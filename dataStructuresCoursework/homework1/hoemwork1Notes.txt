@@ -1,0 +1,17 @@
+
+Question 1
+--------------
+Objectives:
+ - read in file from command line, print out the filename immediately
+ - create array to keep track of array elements, size 100
+ - after reading in data then prompt the user for a number
+
+
+ must have functions:
+  - getline()
+  - insertIntoSortedArray(int myArray[], int numEntries, int newValues)
+    - if function is called print out the entire contents of the myArray
+    - also print out the total amount of current Entries
+
+g++ -std=c++11 homework1.cpp -o a.out
+g++ -std=c++11 homework1.cpp -o a.out
